@@ -1,0 +1,9 @@
+{
+  "slug": "ten-khoa-hoc-slug",
+  "title": "Tên khóa học hiển thị",
+  "description": "Mô tả ngắn về khóa học. Hiển thị trên card trang chủ.",
+  "docOrder": ["README"],
+  "titleMap": {
+    "README": "Trang chủ"
+  }
+}

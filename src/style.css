@@ -1,0 +1,153 @@
+/* Highlight.js theme - base for code blocks */
+@import "highlight.js/styles/github.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+.markdown-body {
+  @apply prose prose-slate max-w-none dark:prose-invert;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.markdown-body pre {
+  @apply m-0 rounded-none bg-transparent shadow-none;
+}
+
+/* Dark mode code block - override highlight.js */
+.dark .hljs {
+  @apply bg-transparent text-gray-200;
+}
+.dark .hljs-keyword {
+  @apply text-purple-400;
+}
+.dark .hljs-string {
+  @apply text-green-400;
+}
+.dark .hljs-number {
+  @apply text-amber-400;
+}
+.dark .hljs-comment {
+  @apply text-gray-500;
+}
+.dark .hljs-title {
+  @apply text-blue-400;
+}
+.dark .hljs-attr {
+  @apply text-cyan-400;
+}
+.dark .hljs-variable {
+  @apply text-orange-300;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+.toc-active {
+  @apply text-indigo-600 dark:text-indigo-400 font-semibold;
+  position: relative;
+}
+
+.toc-active::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  @apply bg-indigo-600 dark:bg-indigo-400 rounded-full;
+}
+
+.sidebar-enter {
+  animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-leave {
+  animation: slideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .markdown-body h1 {
+    @apply text-2xl;
+  }
+
+  .markdown-body h2 {
+    @apply text-xl;
+  }
+
+  .markdown-body h3 {
+    @apply text-lg;
+  }
+}

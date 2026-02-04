@@ -1,0 +1,29 @@
+{
+  "slug": "websocket-sse-socketio",
+  "title": "Tài liệu khóa học WebSocket, Socket.IO, SSE",
+  "description": "Tài liệu được chia nhỏ thành nhiều file để dễ quản lý và giảng dạy. Bạn có thể đọc theo thứ tự:",
+  "docOrder": [
+    "README",
+    "00-intro-overview",
+    "01-websocket-theory",
+    "02-websocket-programming-node",
+    "03-socketio-overview",
+    "04-sse",
+    "05-comparison",
+    "06-architecture",
+    "07-testing-debugging",
+    "08-learning-path"
+  ],
+  "titleMap": {
+    "README": "Tài liệu khóa học WebSocket, Socket.IO, SSE",
+    "00-intro-overview": "1. Tổng quan & Nền tảng",
+    "01-websocket-theory": "2. WebSocket – Lý thuyết",
+    "02-websocket-programming-node": "3. WebSocket – Lập trình Node.js",
+    "03-socketio-overview": "4. Socket.IO",
+    "04-sse": "5. Server-Sent Events (SSE)",
+    "05-comparison": "6. So sánh công nghệ",
+    "06-architecture": "7. Thiết kế kiến trúc",
+    "07-testing-debugging": "8. Testing & Debugging",
+    "08-learning-path": "9. Lộ trình học"
+  }
+}
