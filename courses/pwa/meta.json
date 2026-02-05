@@ -1,0 +1,39 @@
+{
+  "slug": "pwa",
+  "title": "Setup & Triển khai PWA trong Vue 3 + Vite",
+  "description": "Chào mừng bạn đến với khóa học **Progressive Web App (PWA)** sử dụng Vue 3 và Vite! Đây là bộ tài liệu hướng dẫn chi tiết giúp bạn chuyển đổi ứng dụng Vue 3 thành một PWA hoàn chỉnh - từ cấu hình cơ b",
+  "docOrder": [
+    "README",
+    "01-introduction",
+    "02-learning-objectives",
+    "03-setup",
+    "04-vite-config-and-manifest",
+    "05-service-worker",
+    "06-offline-strategies",
+    "07-add-to-home-screen",
+    "08-auto-update",
+    "09-push-notifications",
+    "10-deployment",
+    "11-practical-labs",
+    "12-checklist-and-qa",
+    "13-resources",
+    "home"
+  ],
+  "titleMap": {
+    "01-introduction": "01 — Giới thiệu PWA",
+    "02-learning-objectives": "02 — Mục tiêu học tập",
+    "03-setup": "03 — Setup môi trường",
+    "04-vite-config-and-manifest": "04 — Cấu hình Vite + Manifest",
+    "05-service-worker": "05 — Service Worker (chi tiết)",
+    "06-offline-strategies": "06 — Chiến lược Offline & Cache",
+    "07-add-to-home-screen": "07 — Add to Home Screen (A2HS)",
+    "08-auto-update": "08 — Auto Update & Versioning",
+    "09-push-notifications": "09 — Push Notifications (Nâng cao)",
+    "10-deployment": "10 — Deployment",
+    "11-practical-labs": "11 — Bài lab thực hành",
+    "12-checklist-and-qa": "12 — Checklist & QA (Kiểm tra trước khi release)",
+    "13-resources": "13 — Resources & Tài liệu tham khảo",
+    "home": "Khóa đào tạo: Setup & Triển khai PWA trong Vue 3 + Vite",
+    "README": "Setup & Triển khai PWA trong Vue 3 + Vite"
+  }
+}

@@ -11,5 +11,3 @@ Tài liệu được chia nhỏ thành nhiều file để dễ quản lý và gi
 - [06-architecture.md](./06-architecture.md)
 - [07-testing-debugging.md](./07-testing-debugging.md)
 - [08-learning-path.md](./08-learning-path.md)
-
-Nội dung chi tiết ban đầu vẫn được giữ trong file `khoa-hoc-websocket-socketio-sse.md` ở thư mục gốc, bạn có thể dùng như bản full/print nếu cần.
