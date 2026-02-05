@@ -1,4 +1,4 @@
-## Khóa học chuyên sâu: WebSocket, Socket.IO, Server-Sent Events (SSE)
+## WebSocket, Socket.IO, Server-Sent Events (SSE)
 
 > Tài liệu này được thiết kế như một khóa học tự học / giảng dạy, đi từ nền tảng tới chuyên sâu. Bạn có thể học lần lượt từng chương hoặc nhảy vào phần công nghệ bạn cần.
 

@@ -1,6 +1,6 @@
 {
   "slug": "websocket-sse-socketio",
-  "title": "Tài liệu khóa học WebSocket, Socket.IO, SSE",
+  "title": "Tài liệu WebSocket, Socket.IO, SSE",
   "description": "Tài liệu được chia nhỏ thành nhiều file để dễ quản lý và giảng dạy. Bạn có thể đọc theo thứ tự:",
   "docOrder": [
     "README",
