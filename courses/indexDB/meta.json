@@ -1,0 +1,13 @@
+{
+  "slug": "indexDB",
+  "title": "Tài liệu khóa học IndexDB",
+  "description": "Tài liệu được chia nhỏ thành nhiều file để dễ quản lý và giảng dạy. Bạn có thể đọc theo thứ tự:",
+  "docOrder": [
+    "README",
+    "IndexDB"
+  ],
+  "titleMap": {
+    "IndexDB": "📘 Hướng dẫn Toàn diện về IndexedDB: Từ A-Z",
+    "README": "Tài liệu khóa học IndexDB"
+  }
+}

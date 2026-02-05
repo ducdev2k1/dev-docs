@@ -1,0 +1,41 @@
+{
+  "slug": "build-package-npm",
+  "title": "📦 Đóng gói Component Vue 3 thành Thư viện và Xuất bản lên Npm",
+  "description": "Sau khi hoàn thành khóa học, bạn sẽ:",
+  "docOrder": [
+    "README",
+    "01-gioi-thieu",
+    "02-thiet-lap-moi-truong",
+    "03-xay-dung-component",
+    "03a-xay-dung-component-sfc",
+    "03b-xay-dung-component-tsx",
+    "04-cau-hinh-build",
+    "05-dong-goi-bundle",
+    "06-xuat-ban-npm",
+    "07-tai-lieu-demo",
+    "08-cicd-tu-dong-hoa",
+    "08a-github-actions",
+    "08b-gitlab-ci",
+    "EXAMPLES",
+    "RESOURCES",
+    "SETUP"
+  ],
+  "titleMap": {
+    "01-gioi-thieu": "Bài 01: Giới thiệu và Tổng quan",
+    "02-thiet-lap-moi-truong": "Bài 02: Thiết lập Môi trường Phát triển",
+    "03-xay-dung-component": "Bài 03: Xây dựng Component Vue 3",
+    "03a-xay-dung-component-sfc": "Bài 03a: Xây dựng Component với SFC (.vue)",
+    "03b-xay-dung-component-tsx": "Bài 03b: Xây dựng Component với TSX/JSX (Khuyến nghị cho Library)",
+    "04-cau-hinh-build": "Bài 04: Cấu hình Build cho Thư viện",
+    "05-dong-goi-bundle": "Bài 05: Đóng gói và Bundle",
+    "06-xuat-ban-npm": "Bài 06: Xuất bản lên Npm",
+    "07-tai-lieu-demo": "Bài 07: Tài liệu và Demo",
+    "08-cicd-tu-dong-hoa": "Bài 08: CI/CD và Tự động hóa",
+    "08a-github-actions": "Bài 08a: CI/CD với GitHub Actions",
+    "08b-gitlab-ci": "Bài 08b: CI/CD với GitLab CI",
+    "EXAMPLES": "💡 Ví dụ Code và Templates",
+    "README": "📦 Đóng gói Component Vue 3 thành Thư viện và Xuất bản lên Npm",
+    "RESOURCES": "📚 Tài liệu Tham khảo và Resources",
+    "SETUP": "🚀 Hướng dẫn Cài đặt và Thiết lập"
+  }
+}

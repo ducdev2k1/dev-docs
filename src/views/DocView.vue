@@ -14,7 +14,7 @@
     </div>
     <div
       v-else
-      class="flex gap-8 w-full max-w-6xl mx-auto xl:min-h-0 xl:flex-1 xl:overflow-hidden"
+      class="flex gap-8 w-full pr-4 mx-auto xl:min-h-0 xl:flex-1 xl:overflow-hidden"
     >
       <main
         id="article-content"

@@ -60,7 +60,7 @@ const props = withDefaults(
     lang?: string;
     highlighted: string;
   }>(),
-  { lang: "" }
+  { lang: "" },
 );
 
 const expanded = ref(false);
@@ -96,16 +96,6 @@ watch(
   () => props.highlighted,
   () => {
     setTimeout(checkHeight, 50);
-  }
+  },
 );
 </script>
-
-<style scoped>
-/* Ensure code block doesn't override prose */
-pre {
-  @apply !bg-transparent !p-0;
-}
-code {
-  @apply !bg-transparent !px-0 !py-0 !text-inherit;
-}
-</style>
