@@ -19,8 +19,16 @@
 - **6.3. Định dạng payload SSE**
 
   - Header response:
-    - `Content-Type: text/event-stream`
+    - `Content-Type: text/event-stream; charset=utf-8`
     - `Cache-Control: no-cache`
+  - **Vì sao nên có `charset=utf-8` trong header?**
+    - SSE truyền **text** (dòng `data:`, `event:`, `id:`…). Nếu không khai báo encoding, server hoặc proxy có thể mặc định dùng encoding khác (ví dụ ISO-8859-1), dẫn tới **lỗi hiển thị** (mojibake) khi gửi ký tự Unicode: tiếng Việt có dấu, emoji, ký tự đặc biệt.
+    - Chuẩn SSE (HTML5) coi stream là UTF-8, nhưng **khai báo rõ `charset=utf-8`** trong `Content-Type` giúp:
+      - Trình duyệt và proxy luôn giải mã đúng, tránh đoán encoding.
+      - JSON trong `data:` (có tiếng Việt, emoji) được parse đúng.
+      - Hành vi đồng nhất giữa môi trường (dev, production, CDN).
+    - Ví dụ header đầy đủ:  
+      `Content-Type: text/event-stream; charset=utf-8`
   - Mỗi event là một block gồm các dòng:
     - `id: <event-id>`
     - `event: <event-name>`
