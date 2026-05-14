@@ -1,0 +1,29 @@
+{
+  "slug": "cloudpanel-windows-service-event-log",
+  "title": "Cloud Panel — Quản lý Windows Service & Event Log VPS Windows",
+  "description": "Tài liệu chi tiết về 2 tính năng do mình triển khai trong dự án Cloud Panel: quản lý Windows Service (start/stop/restart) và xem Windows Event Log realtime trên VPS Windows. Hướng dẫn từ con số 0 — khái niệm Windows Service/Event Log, cách vào Remote Desktop xem trực tiếp trên VPS, kiến trúc 3 lớp (Frontend Vue 3 — Backend Node.js — Agent Go), data flow, code path, vị trí lưu trữ, và cách debug.",
+  "docOrder": [
+    "README",
+    "01-introduction",
+    "02-remote-desktop-guide",
+    "03-architecture-overview",
+    "04-windows-services-deep-dive",
+    "05-windows-event-log-deep-dive",
+    "06-alert-rules-integration",
+    "07-data-source-mapping",
+    "08-troubleshooting",
+    "09-resources"
+  ],
+  "titleMap": {
+    "README": "Cloud Panel — Windows Service & Event Log",
+    "01-introduction": "01 — Giới thiệu & khái niệm cơ bản",
+    "02-remote-desktop-guide": "02 — Hướng dẫn vào Remote Desktop xem trên VPS",
+    "03-architecture-overview": "03 — Kiến trúc tổng thể (FE — BE — Agent)",
+    "04-windows-services-deep-dive": "04 — Quản lý Windows Service (chi tiết)",
+    "05-windows-event-log-deep-dive": "05 — Xem Windows Event Log (chi tiết)",
+    "06-alert-rules-integration": "06 — Tích hợp Alert Rules (cảnh báo theo Event)",
+    "07-data-source-mapping": "07 — Data lấy từ đâu? Vị trí file & API mapping",
+    "08-troubleshooting": "08 — Troubleshooting & debug",
+    "09-resources": "09 — Tài liệu tham khảo"
+  }
+}
