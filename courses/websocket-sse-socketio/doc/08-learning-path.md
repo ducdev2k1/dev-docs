@@ -1,7 +1,6 @@
 ## 10. Gợi ý lộ trình học (theo ngày/buổi)
 
 - **Buổi 1 – Nền tảng & WebSocket**
-
   - Học chương 1–3:
     - HTTP limitations, long-lived connections.
     - Lý thuyết WebSocket, handshake, frame.
@@ -10,7 +9,6 @@
     - Viết client bằng `WebSocket` API trên browser.
 
 - **Buổi 2 – WebSocket nâng cao**
-
   - Học chương 4:
     - Broadcast, rooms đơn giản (tự cài).
     - Ping/pong application-level.
@@ -19,7 +17,6 @@
     - Log frame/message để hiểu rõ hơn.
 
 - **Buổi 3 – Socket.IO cơ bản**
-
   - Học chương 5 (phần 5.1–5.4):
     - Cơ chế event-based, namespaces, rooms, ack.
   - Thực hành:
@@ -27,7 +24,6 @@
     - Thêm rooms, hiển thị danh sách user trong room.
 
 - **Buổi 4 – Socket.IO nâng cao & scaling**
-
   - Học chương 5 (phần 5.5–5.7) + chương 8:
     - Auth bằng JWT, middleware.
     - Scaling với Redis adapter.
@@ -36,7 +32,6 @@
     - Deploy nhiều instance và dùng Redis Pub/Sub.
 
 - **Buổi 5 – SSE & so sánh**
-
   - Học chương 6–7:
     - SSE cơ bản, định dạng event.
     - So sánh WebSocket, Socket.IO, SSE, long polling.

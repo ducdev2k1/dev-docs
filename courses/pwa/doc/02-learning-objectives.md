@@ -214,14 +214,12 @@ Sau khóa học, bạn nên có khả năng:
 **Yêu cầu**: Xây dựng một PWA hoàn chỉnh với:
 
 1. **Core features**:
-
    - Offline functionality
    - Installable
    - Responsive design
    - Fast loading
 
 2. **Technical requirements**:
-
    - Lighthouse PWA score >= 90
    - Works offline
    - HTTPS

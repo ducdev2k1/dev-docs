@@ -11,21 +11,21 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 
 ## 📚 Nội dung khóa học
 
-### [Bài 01: Giới thiệu và Tổng quan](./lessons/01-gioi-thieu.md)
+### [Bài 01: Giới thiệu và Tổng quan](./lessons/01-gioi-thieu)
 
 - Tổng quan về Vue 3 và Composition API
 - Lợi ích của việc tạo thư viện component
 - Các công cụ và công nghệ sẽ sử dụng
 - Ví dụ thực tế: inet-component
 
-### [Bài 02: Thiết lập Môi trường Phát triển](./lessons/02-thiet-lap-moi-truong.md)
+### [Bài 02: Thiết lập Môi trường Phát triển](./02-thiet-lap-moi-truong)
 
 - Cài đặt Node.js và npm
 - Tạo dự án Vue 3 với Vite
 - Cấu trúc thư mục cho thư viện
 - Cài đặt các dependencies cần thiết
 
-### [Bài 03: Xây dựng Component Vue 3](./lessons/03-xay-dung-component.md)
+### [Bài 03: Xây dựng Component Vue 3](./03-xay-dung-component)
 
 - Tạo component cơ bản với Composition API
 - **Viết component bằng TSX/JSX (Khuyến nghị)** - Theo chuẩn inet-component
@@ -34,7 +34,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - TypeScript trong Vue 3
 - Styling component với SCSS
 
-### [Bài 04: Cấu hình Build cho Thư viện](./lessons/04-cau-hinh-build.md)
+### [Bài 04: Cấu hình Build cho Thư viện](./04-cau-hinh-build)
 
 - Cấu hình Vite cho library mode
 - Build multiple entry points
@@ -42,7 +42,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - Tree-shaking và optimization
 - Các format output: ESM, CJS, UMD
 
-### [Bài 05: Đóng gói và Bundle](./lessons/05-dong-goi-bundle.md)
+### [Bài 05: Đóng gói và Bundle](./05-dong-goi-bundle)
 
 - Cấu trúc package.json cho library
 - Export và entry points
@@ -50,7 +50,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - Build scripts và commands
 - Testing build output
 
-### [Bài 06: Xuất bản lên Npm](./lessons/06-xuat-ban-npm.md)
+### [Bài 06: Xuất bản lên Npm](./06-xuat-ban-npm)
 
 - Đăng ký tài khoản npm
 - Cấu hình .npmignore
@@ -58,7 +58,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - Publish package lên npm public
 - Publish package lên npm private (GitHub Packages, etc.)
 
-### [Bài 07: Tài liệu và Demo](./lessons/07-tai-lieu-demo.md)
+### [Bài 07: Tài liệu và Demo](./07-tai-lieu-demo)
 
 - Tạo README.md chi tiết
 - Sử dụng Storybook cho component demos
@@ -66,7 +66,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - Ví dụ sử dụng
 - Changelog và versioning
 
-### [Bài 08a: CI/CD với GitHub Actions](./lessons/08a-github-actions.md)
+### [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions)
 
 - Thiết lập GitHub Actions
 - Auto build và test
@@ -74,7 +74,7 @@ Sau khi hoàn thành khóa học, bạn sẽ:
 - Automated versioning
 - Quality checks (linting, testing)
 
-### [Bài 08b: CI/CD với GitLab CI](./lessons/08b-gitlab-ci.md)
+### [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci)
 
 - Thiết lập GitLab CI (theo chuẩn inet-component)
 - Auto build và publish package

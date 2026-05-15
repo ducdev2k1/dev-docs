@@ -39,6 +39,7 @@ Mặc dù IndexedDB rất mạnh, nhưng không phải là "viên đạn bạc" 
 3.  **Tương thích**: Các trình duyệt rất cũ có thể hỗ trợ không đầy đủ (nhưng hiện tại >99% đã Ok).
 4.  **Vấn đề Quota**: Nếu ổ cứng đầy, trình duyệt có thể tự xóa dữ liệu để giải phóng bộ nhớ (ít gặp nhưng có thể xảy ra).
 5.  **Dữ liệu không được mã hóa**: IndexedDB lưu trữ dữ liệu dạng plaintext. Bất kỳ ai có quyền truy cập vào máy tính hoặc DevTools đều có thể đọc được dữ liệu. Không nên lưu thông tin nhạy cảm (mật khẩu, token, thông tin cá nhân quan trọng) mà không mã hóa trước.
+
 ---
 
 ## 2. Tư duy cốt lõi (Core Concepts) 🧠
@@ -46,28 +47,23 @@ Mặc dù IndexedDB rất mạnh, nhưng không phải là "viên đạn bạc" 
 Để làm chủ IndexedDB, bạn cần hiểu 5 khái niệm sau (tưởng tượng như một **Tủ hồ sơ**):
 
 1.  **Database (Cơ sở dữ liệu)**:
-
     - Là cái **Tủ hồ sơ**. Mỗi ứng dụng có thể có nhiều tủ (Database), nhưng thường chỉ cần một.
     - _Đặc biệt_: Nó có **Version** (Phiên bản). Khi muốn thay đổi cấu trúc tủ (thêm ngăn), bạn phải tăng Version này lên.
 
 2.  **Object Store (Kho chứa đối tượng)**:
-
     - Là các **Table (Bảng)** hoặc **Collection**.
     - Tương đương với **Table** trong SQL hoặc **Collection** trong MongoDB.
     - Nơi chứa dữ liệu thực tế (User, Product, Order...).
 
 3.  **Index (Chỉ mục)**:
-
     - Là các **Nhãn dán** bên ngoài hồ sơ.
     - Giúp bạn tìm kiếm cực nhanh (Ví dụ: tìm theo _Email_ hoặc _Tuổi_) mà không cần lật từng hồ sơ một.
 
 4.  **Transaction (Giao dịch)**:
-
     - Là quy tắc **"Làm xong hết hoặc không làm gì cả"**.
     - Mọi thao tác đọc/ghi đều phải nằm trong một Transaction. Nếu đang ghi mà lỗi -> Tự động hoàn tác (Rollback) như chưa có gì xảy ra. An toàn tuyệt đối!
 
 5.  **Cursor (Con trỏ)**:
-
     - Là **"ngón tay"** duyệt qua từng hồ sơ một trong ngăn kéo.
     - Thay vì lấy hết 10,000 hồ sơ ra bàn (RAM), Cursor cho phép bạn đọc từng cái một, xử lý xong thì lấy tiếp.
     - Đặc biệt hữu ích khi dữ liệu quá lớn hoặc cần cập nhật/xóa hàng loạt.

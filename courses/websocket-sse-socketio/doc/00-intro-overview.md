@@ -16,7 +16,6 @@
 ## 1. Tổng quan: Tại sao cần realtime trên web?
 
 - **1.1. Hạn chế của HTTP truyền thống**
-
   - HTTP/1.1 kiểu classic là **request–response**:
     - Client luôn là bên **chủ động** gửi request.
     - Server **không thể** tự đẩy dữ liệu xuống client nếu client không hỏi.
@@ -27,7 +26,6 @@
       - **Long Polling**: client giữ kết nối chờ dữ liệu → cải thiện nhưng vẫn có overhead của HTTP, reconnect liên tục.
 
 - **1.2. Các mô hình “realtime” phổ biến**
-
   - **Short Polling**: client loop gọi API → dễ cài, tốn tài nguyên.
   - **Long Polling**: giữ request mở lâu, server trả về khi có dữ liệu mới → giả realtime.
   - **WebSocket**: kết nối **hai chiều**, **full-duplex**, lâu dài giữa client–server.
@@ -47,7 +45,6 @@
 ## 2. Nền tảng kỹ thuật: Kết nối lâu dài trên Web
 
 - **2.1. TCP, HTTP, và “keep-alive”**
-
   - **TCP**: protocol ở tầng transport đảm bảo truyền dữ liệu tin cậy.
   - **HTTP**:
     - Chạy **trên TCP**.
@@ -55,7 +52,6 @@
   - Nhưng: HTTP truyền thống vẫn **request–response**, không có cơ chế đẩy chủ động tự nhiên.
 
 - **2.2. Mô hình concurrency trên server**
-
   - Khi dùng kết nối lâu dài:
     - Mỗi client giữ kết nối → server phải quản lý rất nhiều socket.
     - Cần chú ý:

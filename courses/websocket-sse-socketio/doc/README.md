@@ -19,8 +19,8 @@ Chào mừng bạn đến với khóa học **Realtime trên Web**. Tài liệu 
 
 Tài liệu được chia thành các phần sau, nên đọc theo thứ tự:
 
-| #   | Bài                                                                 | File                               |
-| --- | ------------------------------------------------------------------- | ---------------------------------- |
+| #   | Bài                                                              | File                               |
+| --- | ---------------------------------------------------------------- | ---------------------------------- |
 | 1   | [Tổng quan & Nền tảng](./00-intro-overview)                      | `00-intro-overview.md`             |
 | 2   | [WebSocket – Lý thuyết](./01-websocket-theory)                   | `01-websocket-theory.md`           |
 | 3   | [WebSocket – Lập trình Node.js](./02-websocket-programming-node) | `02-websocket-programming-node.md` |

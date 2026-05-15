@@ -7,13 +7,7 @@
   "name": "@yourusername/my-vue-library",
   "version": "0.1.0",
   "description": "A Vue 3 component library with TSX/JSX support",
-  "keywords": [
-    "vue",
-    "vue3",
-    "components",
-    "ui",
-    "library"
-  ],
+  "keywords": ["vue", "vue3", "components", "ui", "library"],
   "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "repository": {
@@ -36,15 +30,8 @@
     },
     "./style.css": "./dist/my-vue-library.css"
   },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
-  "sideEffects": [
-    "*.css",
-    "*.scss"
-  ],
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": ["*.css", "*.scss"],
   "scripts": {
     "dev": "vite",
     "build": "npm run build:types && npm run build:lib",
@@ -90,52 +77,52 @@
 ## ⚙️ Vite Config Template
 
 ```typescript
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import { resolve } from 'path'
-import { readFileSync } from 'fs'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import vueJsx from "@vitejs/plugin-vue-jsx";
+import { resolve } from "path";
+import { readFileSync } from "fs";
 
 const packageJson = JSON.parse(
-  readFileSync(resolve(__dirname, 'package.json'), 'utf-8')
-)
+  readFileSync(resolve(__dirname, "package.json"), "utf-8"),
+);
 
 export default defineConfig({
   plugins: [vue(), vueJsx()], // Thêm vueJsx cho TSX/JSX support
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      "@": resolve(__dirname, "src"),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        silenceDeprecations: ['legacy-js-api'],
+        silenceDeprecations: ["legacy-js-api"],
       },
     },
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MyVueLibrary',
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "MyVueLibrary",
       fileName: (format) => `my-vue-library.${format}.js`,
-      formats: ['es', 'cjs', 'umd'],
+      formats: ["es", "cjs", "umd"],
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ["vue"],
       output: {
         globals: {
-          vue: 'Vue',
+          vue: "Vue",
         },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') {
-            return 'my-vue-library.css'
+          if (assetInfo.name === "style.css") {
+            return "my-vue-library.css";
           }
-          return assetInfo.name || 'asset'
+          return assetInfo.name || "asset";
         },
       },
     },
-    minify: 'terser',
+    minify: "terser",
     terserOptions: {
       compress: {
         drop_console: true,
@@ -145,7 +132,7 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
   },
-})
+});
 ```
 
 ## 📝 TypeScript Config Template
@@ -182,6 +169,7 @@ export default defineConfig({
 ```
 
 **Lưu ý:**
+
 - `"jsx": "preserve"`: Giữ nguyên JSX để Vite xử lý
 - `"jsxImportSource": "vue"`: Sử dụng Vue JSX transform
 
@@ -333,45 +321,42 @@ export function useRender(renderFn: () => VNode | VNode[]): void {
 ### Button Component với SFC (.vue)
 
 **src/components/Button/Button.vue:**
+
 ```vue
 <template>
-  <button 
-    :class="buttonClass" 
-    :disabled="disabled"
-    @click="handleClick"
-  >
+  <button :class="buttonClass" :disabled="disabled" @click="handleClick">
     <slot></slot>
   </button>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import type { ButtonProps } from './types'
+import { computed } from "vue";
+import type { ButtonProps } from "./types";
 
 const props = withDefaults(defineProps<ButtonProps>(), {
-  variant: 'primary',
-  size: 'medium',
+  variant: "primary",
+  size: "medium",
   disabled: false,
-})
+});
 
 const emit = defineEmits<{
-  click: [event: MouseEvent]
-}>()
+  click: [event: MouseEvent];
+}>();
 
 const buttonClass = computed(() => [
-  'btn',
+  "btn",
   `btn--${props.variant}`,
   `btn--${props.size}`,
   {
-    'btn--disabled': props.disabled,
+    "btn--disabled": props.disabled,
   },
-])
+]);
 
 const handleClick = (event: MouseEvent) => {
   if (!props.disabled) {
-    emit('click', event)
+    emit("click", event);
   }
-}
+};
 </script>
 
 <style scoped>
@@ -418,29 +403,32 @@ const handleClick = (event: MouseEvent) => {
 ```
 
 **src/components/Button/types.ts:**
+
 ```typescript
 export interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'outline'
-  size?: 'small' | 'medium' | 'large'
-  disabled?: boolean
+  variant?: "primary" | "secondary" | "outline";
+  size?: "small" | "medium" | "large";
+  disabled?: boolean;
 }
 ```
 
 **src/components/Button/index.ts:**
+
 ```typescript
-export { default } from './Button.vue'
-export type { ButtonProps } from './types'
+export { default } from "./Button.vue";
+export type { ButtonProps } from "./types";
 ```
 
 ## 📤 Entry Point Template
 
 **src/index.ts:**
+
 ```typescript
 // Export components
 // Nếu sử dụng .tsx files (khuyến nghị):
-export { default as Button } from './components/Button/Button.tsx'
-export { default as Input } from './components/Input/Input.tsx'
-export { default as Card } from './components/Card/Card.tsx'
+export { default as Button } from "./components/Button/Button.tsx";
+export { default as Input } from "./components/Input/Input.tsx";
+export { default as Card } from "./components/Card/Card.tsx";
 
 // Nếu sử dụng .vue files:
 // export { default as Button } from './components/Button/Button.vue'
@@ -448,59 +436,61 @@ export { default as Card } from './components/Card/Card.tsx'
 // export { default as Card } from './components/Card/Card.vue'
 
 // Export types
-export type { ButtonProps } from './components/Button/types'
-export type { InputProps } from './components/Input/types'
-export type { CardProps } from './components/Card/types'
+export type { ButtonProps } from "./components/Button/types";
+export type { InputProps } from "./components/Input/types";
+export type { CardProps } from "./components/Card/types";
 
 // Export composables
-export * from './composables'
+export * from "./composables";
 
 // Export utils
-export * from './utils'
+export * from "./utils";
 ```
 
 ## 🧪 Test Template
 
 **tests/components/Button.test.ts:**
-```typescript
-import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
-import Button from '@/components/Button/Button.vue'
 
-describe('Button', () => {
-  it('renders correctly', () => {
+```typescript
+import { describe, it, expect } from "vitest";
+import { mount } from "@vue/test-utils";
+import Button from "@/components/Button/Button.vue";
+
+describe("Button", () => {
+  it("renders correctly", () => {
     const wrapper = mount(Button, {
       slots: {
-        default: 'Click me',
+        default: "Click me",
       },
-    })
-    
-    expect(wrapper.text()).toBe('Click me')
-  })
+    });
 
-  it('emits click event', async () => {
-    const wrapper = mount(Button)
-    
-    await wrapper.trigger('click')
-    
-    expect(wrapper.emitted('click')).toBeTruthy()
-  })
+    expect(wrapper.text()).toBe("Click me");
+  });
 
-  it('applies variant class', () => {
+  it("emits click event", async () => {
+    const wrapper = mount(Button);
+
+    await wrapper.trigger("click");
+
+    expect(wrapper.emitted("click")).toBeTruthy();
+  });
+
+  it("applies variant class", () => {
     const wrapper = mount(Button, {
       props: {
-        variant: 'primary',
+        variant: "primary",
       },
-    })
-    
-    expect(wrapper.classes()).toContain('btn--primary')
-  })
-})
+    });
+
+    expect(wrapper.classes()).toContain("btn--primary");
+  });
+});
 ```
 
 ## 🔄 GitHub Actions Template
 
 **.github/workflows/ci.yml:**
+
 ```yaml
 name: CI
 
@@ -521,8 +511,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
-          cache: 'npm'
+          node-version: "20.x"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -541,6 +531,7 @@ jobs:
 ```
 
 **.github/workflows/publish.yml:**
+
 ```yaml
 name: Publish
 
@@ -562,9 +553,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-          cache: 'npm'
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -651,44 +642,44 @@ Thumbs.db
 ## 🎯 Composable Template
 
 **src/composables/useToggle.ts:**
+
 ```typescript
-import { ref } from 'vue'
+import { ref } from "vue";
 
 /**
  * Toggle boolean value
- * 
+ *
  * @param initialValue - Initial value
  * @returns Object with value and toggle functions
  */
 export function useToggle(initialValue = false) {
-  const value = ref(initialValue)
-  
+  const value = ref(initialValue);
+
   const toggle = () => {
-    value.value = !value.value
-  }
-  
+    value.value = !value.value;
+  };
+
   const setTrue = () => {
-    value.value = true
-  }
-  
+    value.value = true;
+  };
+
   const setFalse = () => {
-    value.value = false
-  }
-  
+    value.value = false;
+  };
+
   return {
     value,
     toggle,
     setTrue,
     setFalse,
-  }
+  };
 }
 ```
 
 ## 📚 README Template
 
-Xem [Bài 07: Tài liệu và Demo](./lessons/07-tai-lieu-demo.md) để có README template đầy đủ.
+Xem [Bài 07: Tài liệu và Demo](./07-tai-lieu-demo) để có README template đầy đủ.
 
 ---
 
 **Sử dụng các templates này để bắt đầu nhanh chóng! 🚀**
-
