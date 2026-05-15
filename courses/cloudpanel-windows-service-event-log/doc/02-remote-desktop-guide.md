@@ -213,7 +213,7 @@ Right-click 1 service → menu:
   - Tab **Recovery:** action khi service crash (restart, run program…)
   - Tab **Dependencies:** service nào phụ thuộc / phụ thuộc service nào
 
-> 📌 **Đối chiếu với Cloud Panel:** Mỗi trường ở đây đều có trong Cloud Panel UI. Xem mapping ở [trang 07](./07-data-source-mapping.md).
+> 📌 **Đối chiếu với Cloud Panel:** Mỗi trường ở đây đều có trong Cloud Panel UI. Xem mapping ở [trang 07](./07-data-source-mapping).
 
 ### Cách 2 — PowerShell (cho dev)
 
@@ -318,7 +318,7 @@ Tab **Details** → xem XML raw — đây chính là format **Agent Cloud Panel 
 4. EventID: `1000` (hoặc range `1000-2000`)
 5. OK.
 
-> 📌 **Đối chiếu:** Cloud Panel filter bar có hệt các option này — level, EventID, time range, source, text contains. Chi tiết [trang 05](./05-windows-event-log-deep-dive.md).
+> 📌 **Đối chiếu:** Cloud Panel filter bar có hệt các option này — level, EventID, time range, source, text contains. Chi tiết [trang 05](./05-windows-event-log-deep-dive).
 
 ### Cách 2 — PowerShell Get-WinEvent
 
@@ -431,4 +431,4 @@ Restart-Service CloudPanelAgent
 
 ---
 
-**Tiếp theo:** [03 — Kiến trúc tổng thể (FE — BE — Agent) →](./03-architecture-overview.md)
+**Tiếp theo:** [03 — Kiến trúc tổng thể (FE — BE — Agent) →](./03-architecture-overview)

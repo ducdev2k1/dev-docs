@@ -261,4 +261,4 @@ Agent chạy như Windows Service tên **`CloudPanelAgent`** → có thể start
 
 ---
 
-**Tiếp theo:** [08 — Troubleshooting & debug →](./08-troubleshooting.md)
+**Tiếp theo:** [08 — Troubleshooting & debug →](./08-troubleshooting)

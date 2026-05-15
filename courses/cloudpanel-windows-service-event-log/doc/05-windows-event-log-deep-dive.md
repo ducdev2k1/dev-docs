@@ -750,4 +750,4 @@ Trade-off: 2s latency tối đa, đổi lấy code đơn giản hơn nhiều.
 
 ---
 
-**Tiếp theo:** [06 — Tích hợp Alert Rules →](./06-alert-rules-integration.md)
+**Tiếp theo:** [06 — Tích hợp Alert Rules →](./06-alert-rules-integration)

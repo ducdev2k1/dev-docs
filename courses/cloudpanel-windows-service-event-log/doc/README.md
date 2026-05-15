@@ -24,15 +24,15 @@ Sau khi đọc xong, bạn sẽ:
 
 | # | Trang | Nội dung |
 |---|---|---|
-| 01 | [Giới thiệu & khái niệm cơ bản](./01-introduction.md) | Windows Service là gì? Event Log là gì? Tại sao cần Cloud Panel? |
-| 02 | [Hướng dẫn vào Remote Desktop](./02-remote-desktop-guide.md) | RDP từ Windows / macOS / Linux. Mở `services.msc`, `eventvwr.msc` |
-| 03 | [Kiến trúc tổng thể](./03-architecture-overview.md) | 3 lớp FE — BE — Agent, Socket.IO namespaces, request flow |
-| 04 | [Quản lý Windows Service — chi tiết](./04-windows-services-deep-dive.md) | UI, API endpoints, code path, mutex, critical service guard |
-| 05 | [Xem Windows Event Log — chi tiết](./05-windows-event-log-deep-dive.md) | UI, live stream, cursor pagination, XPath filter, export CSV |
-| 06 | [Tích hợp Alert Rules](./06-alert-rules-integration.md) | Cảnh báo khi event xuất hiện, dedup, cooldown, notification |
-| 07 | [Data lấy từ đâu? File & API mapping](./07-data-source-mapping.md) | Mỗi data point trên UI → API nào → file code nào → lưu Mongo / TimescaleDB / không lưu |
-| 08 | [Troubleshooting & debug](./08-troubleshooting.md) | Checklist khi service không start, event không stream, agent offline |
-| 09 | [Tài liệu tham khảo](./09-resources.md) | Link Microsoft docs, Cloud Panel repo, internal docs |
+| 01 | [Giới thiệu & khái niệm cơ bản](./01-introduction) | Windows Service là gì? Event Log là gì? Tại sao cần Cloud Panel? |
+| 02 | [Hướng dẫn vào Remote Desktop](./02-remote-desktop-guide) | RDP từ Windows / macOS / Linux. Mở `services.msc`, `eventvwr.msc` |
+| 03 | [Kiến trúc tổng thể](./03-architecture-overview) | 3 lớp FE — BE — Agent, Socket.IO namespaces, request flow |
+| 04 | [Quản lý Windows Service — chi tiết](./04-windows-services-deep-dive) | UI, API endpoints, code path, mutex, critical service guard |
+| 05 | [Xem Windows Event Log — chi tiết](./05-windows-event-log-deep-dive) | UI, live stream, cursor pagination, XPath filter, export CSV |
+| 06 | [Tích hợp Alert Rules](./06-alert-rules-integration) | Cảnh báo khi event xuất hiện, dedup, cooldown, notification |
+| 07 | [Data lấy từ đâu? File & API mapping](./07-data-source-mapping) | Mỗi data point trên UI → API nào → file code nào → lưu Mongo / TimescaleDB / không lưu |
+| 08 | [Troubleshooting & debug](./08-troubleshooting) | Checklist khi service không start, event không stream, agent offline |
+| 09 | [Tài liệu tham khảo](./09-resources) | Link Microsoft docs, Cloud Panel repo, internal docs |
 
 ## Cách đọc
 
@@ -87,4 +87,4 @@ cloud-panel-application/                    ← Monorepo
 
 ---
 
-**Bắt đầu từ đây:** [01 — Giới thiệu & khái niệm cơ bản →](./01-introduction.md)
+**Bắt đầu từ đây:** [01 — Giới thiệu & khái niệm cơ bản →](./01-introduction)

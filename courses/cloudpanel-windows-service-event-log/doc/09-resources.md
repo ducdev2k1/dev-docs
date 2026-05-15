@@ -210,4 +210,4 @@
 
 ---
 
-**Đã hết!** Bạn vừa hoàn thành tài liệu Cloud Panel Windows Service & Event Log. Quay về [README](./README.md) để xem index, hoặc bookmark trang này làm tham chiếu nhanh.
+**Đã hết!** Bạn vừa hoàn thành tài liệu Cloud Panel Windows Service & Event Log. Quay về [README](./README) để xem index, hoặc bookmark trang này làm tham chiếu nhanh.

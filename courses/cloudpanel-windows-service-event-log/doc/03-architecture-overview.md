@@ -312,4 +312,4 @@ Khi user mở UI → BE gửi request tới agent → agent đọc trực tiếp
 
 ---
 
-**Tiếp theo:** [04 — Quản lý Windows Service (chi tiết) →](./04-windows-services-deep-dive.md)
+**Tiếp theo:** [04 — Quản lý Windows Service (chi tiết) →](./04-windows-services-deep-dive)

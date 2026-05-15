@@ -142,7 +142,7 @@ Test thủ công: vào trang Event Log → set filter giống condition trong ru
 
 ### 🔍 Check 3 — Có active subscription không?
 
-⚠️ **Quan trọng:** Alert chỉ fire khi có **active event log subscription** (xem [trang 06](./06-alert-rules-integration.md) section 10).
+⚠️ **Quan trọng:** Alert chỉ fire khi có **active event log subscription** (xem [trang 06](./06-alert-rules-integration) section 10).
 
 → Nếu user không mở tab Event Log → không có subscription → không có event → không alert.
 
@@ -311,4 +311,4 @@ Trước khi tạo ticket bug, đảm bảo đã check:
 
 ---
 
-**Tiếp theo:** [09 — Tài liệu tham khảo →](./09-resources.md)
+**Tiếp theo:** [09 — Tài liệu tham khảo →](./09-resources)

@@ -363,4 +363,4 @@ Alert rules **tích hợp chặt** với module Event Log:
 
 ---
 
-**Tiếp theo:** [07 — Data lấy từ đâu? File & API mapping →](./07-data-source-mapping.md)
+**Tiếp theo:** [07 — Data lấy từ đâu? File & API mapping →](./07-data-source-mapping)

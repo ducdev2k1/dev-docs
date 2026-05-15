@@ -684,4 +684,4 @@ FE useWindowsServiceSocket socket.on('service_status_changed')
 
 ---
 
-**Tiếp theo:** [05 — Xem Windows Event Log (chi tiết) →](./05-windows-event-log-deep-dive.md)
+**Tiếp theo:** [05 — Xem Windows Event Log (chi tiết) →](./05-windows-event-log-deep-dive)
