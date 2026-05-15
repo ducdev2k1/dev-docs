@@ -461,8 +461,8 @@ npm publish
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 07: Tài liệu và Demo](./07-tai-lieu-demo.md)
+Sẵn sàng? Hãy chuyển sang [Bài 07: Tài liệu và Demo](./07-tai-lieu-demo)
 
 Sau đó, bạn có thể chọn:
-- [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions.md) - Nếu bạn sử dụng GitHub
-- [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci.md) - Nếu bạn sử dụng GitLab
+- [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions) - Nếu bạn sử dụng GitHub
+- [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci) - Nếu bạn sử dụng GitLab

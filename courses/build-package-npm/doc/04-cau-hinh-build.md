@@ -432,5 +432,5 @@ node test-import.mjs
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 05: Đóng gói và Bundle](./05-dong-goi-bundle.md)
+Sẵn sàng? Hãy chuyển sang [Bài 05: Đóng gói và Bundle](./05-dong-goi-bundle)
 

@@ -10,7 +10,7 @@ Sau bài học này, bạn sẽ:
 - Biết cách cấu hình GitLab CI variables
 - Hiểu cách sử dụng GitLab CI theo chuẩn inet-component
 
-> **Lưu ý:** Bài này hướng dẫn sử dụng GitLab CI. Nếu bạn sử dụng GitHub, hãy xem [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions.md).
+> **Lưu ý:** Bài này hướng dẫn sử dụng GitLab CI. Nếu bạn sử dụng GitHub, hãy xem [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions).
 
 ## 🚀 GitLab CI
 
@@ -378,6 +378,6 @@ variables:
 
 ## ➡️ Bài tiếp theo
 
-Nếu bạn sử dụng GitHub, hãy xem [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions.md).
+Nếu bạn sử dụng GitHub, hãy xem [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions).
 
 Hoặc bạn đã hoàn thành khóa học! 🎉

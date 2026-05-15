@@ -448,4 +448,4 @@ Nếu không có lỗi, bạn đã setup thành công! 🎉
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 03: Xây dựng Component Vue 3](./03-xay-dung-component.md)
+Sẵn sàng? Hãy chuyển sang [Bài 03: Xây dựng Component Vue 3](./03-xay-dung-component)

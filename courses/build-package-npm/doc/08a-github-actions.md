@@ -10,7 +10,7 @@ Sau bài học này, bạn sẽ:
 - Biết cách automated versioning
 - Biết cách setup quality checks (linting, testing)
 
-> **Lưu ý:** Bài này hướng dẫn sử dụng GitHub Actions. Nếu bạn sử dụng GitLab, hãy xem [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci.md).
+> **Lưu ý:** Bài này hướng dẫn sử dụng GitHub Actions. Nếu bạn sử dụng GitLab, hãy xem [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci).
 
 ## 🚀 GitHub Actions
 
@@ -674,6 +674,6 @@ npx husky add .husky/pre-commit "npx lint-staged"
 
 ## ➡️ Bài tiếp theo
 
-Nếu bạn sử dụng GitLab, hãy xem [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci.md).
+Nếu bạn sử dụng GitLab, hãy xem [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci).
 
 Hoặc bạn đã hoàn thành khóa học! 🎉

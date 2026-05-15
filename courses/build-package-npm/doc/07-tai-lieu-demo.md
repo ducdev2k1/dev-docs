@@ -191,7 +191,7 @@ See [examples](./examples) folder for more examples.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) first.
+Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING) first.
 
 ## 📄 License
 
@@ -604,5 +604,5 @@ Thêm badges vào README:
 ## ➡️ Bài tiếp theo
 
 Sẵn sàng? Hãy chọn một trong hai:
-- [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions.md) - Nếu bạn sử dụng GitHub
-- [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci.md) - Nếu bạn sử dụng GitLab
+- [Bài 08a: CI/CD với GitHub Actions](./08a-github-actions) - Nếu bạn sử dụng GitHub
+- [Bài 08b: CI/CD với GitLab CI](./08b-gitlab-ci) - Nếu bạn sử dụng GitLab

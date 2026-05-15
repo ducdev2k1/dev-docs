@@ -948,4 +948,4 @@ export interface CardProps {
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 04: Cấu hình Build cho Thư viện](./04-cau-hinh-build.md)
+Sẵn sàng? Hãy chuyển sang [Bài 04: Cấu hình Build cho Thư viện](./04-cau-hinh-build)

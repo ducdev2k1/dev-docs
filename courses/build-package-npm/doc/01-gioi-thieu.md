@@ -299,4 +299,4 @@ const handleItemClick = (item: MenuItem) => {
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 02: Thiết lập Môi trường Phát triển](./02-thiet-lap-moi-truong.md)
+Sẵn sàng? Hãy chuyển sang [Bài 02: Thiết lập Môi trường Phát triển](./02-thiet-lap-moi-truong)

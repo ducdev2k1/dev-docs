@@ -411,5 +411,5 @@ npm run size
 
 ## ➡️ Bài tiếp theo
 
-Sẵn sàng? Hãy chuyển sang [Bài 06: Xuất bản lên Npm](./06-xuat-ban-npm.md)
+Sẵn sàng? Hãy chuyển sang [Bài 06: Xuất bản lên Npm](./06-xuat-ban-npm)
 
